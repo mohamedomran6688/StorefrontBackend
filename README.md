@@ -110,14 +110,14 @@ Bellow are the environmental variables that needs to be set in a .env file. This
 
 NB: The given values are used in developement and testing but not in production.
 
-PORT=3000
-NODE_ENV=dev
-PS_host= localhost
-PS_port= 5432
-PS_DB_dev= name database to dev
-PS_DB_test= name database to test
-PS_user= user_name of database
-PS_password= password of database
-BCRYPT_PASS=oeuifhgeorgtleiogjhegohgoiugogynyhbfvdwhv
-saltRounds=10
-secretOrPrivateKey=iodjmwtsafbvxz
+- PORT=3000
+- NODE_ENV=dev
+- PS_host= localhost
+- PS_port= 5432
+- PS_DB_dev= name database to dev
+- PS_DB_test= name database to test
+- PS_user= user_name of database
+- PS_password= password of database
+- BCRYPT_PASS=oeuifhgeorgtleiogjhegohgoiugogynyhbfvdwhv
+- saltRounds=10
+- secretOrPrivateKey=iodjmwtsafbvxz
