@@ -102,6 +102,7 @@
 ### Notes
 
 - to create superuser use this commande (npm run createsuperuser)
+- there is file named thunder-collection_test.json that is containing more requests examples for Thunder extension
 
 ### Enviromental Variables Set up
 
