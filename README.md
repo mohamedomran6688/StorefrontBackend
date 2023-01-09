@@ -91,12 +91,11 @@
 
 #### Example list all orders
 
-- will using update order exaple with description : test2 to do this we need conditions to get one order using id :1
 - [token required]:http://localhost:3000/products/order [GET]
 
-#### Example update
+#### Example delete
 
-- will using update order id :1
+- will using delete order id :1
   (args: {"id":1})[token required]:http://localhost:3000/products/order [DELETE]
 
 ### Notes
