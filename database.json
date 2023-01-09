@@ -1,0 +1,41 @@
+{
+    "defaultEnv": {
+        "ENV": "NODE_ENV"
+    },
+    "dev": {
+        "driver": "pg",
+        "host": {
+            "ENV": "PS_host"
+        },
+        "port": {
+            "ENV": "PS_port"
+        },
+        "database": {
+            "ENV": "PS_DB_dev"
+        },
+        "user": {
+            "ENV": "PS_user"
+        },
+        "password": {
+            "ENV": "PS_password"
+        }
+    },
+    "test": {
+        "driver": "pg",
+        "host": {
+            "ENV": "PS_host"
+        },
+        "port": {
+            "ENV": "PS_port"
+        },
+        "database": {
+            "ENV": "PS_DB_test"
+        },
+        "user": {
+            "ENV": "PS_user"
+        },
+        "password": {
+            "ENV": "PS_password"
+        }
+    }
+}

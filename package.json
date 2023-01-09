@@ -1,0 +1,51 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/StorefrontBackend/index.ts",
+  "scripts": {
+
+    "createsuperuser": "ts-node src/users/createsuperuser.ts",
+    "start": "nodemon src/StorefrontBackend/index.ts",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "jasmine": "jasmine",
+    "clean": "rm -rf build",
+    "build": "npm run clean && npx tsc",
+    "migrate": "db-migrate up",
+    "delete_migrate": "db-migrate down",
+    "delete_all_migrate": "db-migrate reset",
+    "test": "db-migrate reset --env test && npm run clean && set NODE_ENV=test && tsc && db-migrate up --env test && tsc && jasmine && db-migrate reset --env test"
+  },
+  "keywords": [],
+  "author": "OMRAN",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.14",
+    "@types/jasmine": "^4.3.1",
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/pg": "^8.6.6",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "db-migrate": "^0.11.13",
+    "db-migrate-pg": "^1.2.2",
+    "eslint": "^8.29.0",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.0",
+    "readline": "^1.3.0",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.8.0"
+  }
+}
